@@ -75,13 +75,16 @@ textInput.addEventListener("input", () => {
     nowScore.textContent = `Score: ${myScore}`;
     if (select.value == "easy") {
       second = second + 5;
+      time.textContent = `${second} + 5`;
       localStorage.setItem("level", "easy");
     } else if (select.value == "medium") {
       second = second + 3;
+      time.textContent = `${second} + 3`;
       localStorage.setItem("level", "medium");
     } else {
       second = second + 1;
       localStorage.setItem("level", "hard");
+      time.textContent = `${second} + 1`;
     }
   }
 });
