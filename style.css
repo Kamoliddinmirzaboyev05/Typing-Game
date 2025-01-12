@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .2s ease;
+  font-family: "Montserrat";
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #1a5368, #0f232b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fafafa;
+  position: relative;
+}
+select{
+  outline: none;
+}
+.modal-back{
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, .55);
+  display: none;
+}
+.modal {
+  width: 500px;
+  height: 400px;
+  background: linear-gradient(45deg, #3597bb, #1a5266);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  position: fixed;
+  top: -1500px;
+  right: 35%;
+}
+.modal-open{
+  top: 150px !important;
+}
+.modal-title,
+.your-result {
+  padding: 12px 95px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 0px #1a5266;
+}
+.tryBtn {
+  padding: 10px 50px;
+  font-size: 24px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: #093d4f;
+  box-shadow: 0px 0px 15px 0px #53accc;
+}
+.tryBtn:hover {
+  background-color: #09607d;
+}
+.tryBtn:active {
+  background-color: #064459;
+}
+.game {
+  width: 1200px;
+  height: 600px;
+  box-shadow: 0px 0px 8px 10px #10242c;
+  padding: 50px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section {
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: column;
+}
+.textInput {
+  width: 400px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  height: 40px;
+  padding: 5px 15px;
+}
+#select {
+  width: 250px;
+  height: 30px;
+  border: none;
+  font-size: 18px;
+}
+.timeWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
